@@ -110,7 +110,7 @@ index 580bae0d414d371a07a6bfeefc41fdd989dc0083..2352bd3bbae810e25fa4ff4de701e85c
      public Component getVersionMessage(@Nonnull String serverVersion) {
 -        String[] parts = serverVersion.substring("git-Paper-".length()).split("[-\\s]");
 -        final Component updateMessage = getUpdateStatusMessage("PaperMC/Paper", GITHUB_BRANCH_NAME, parts[0]);
-+        String[] parts = serverVersion.substring("git-Airplane-".length()).split("[-\\s]"); // Tuinity
++        String[] parts = serverVersion.substring("git-MalinaServerV3-".length()).split("[-\\s]"); // Tuinity
 +        final Component updateMessage = getUpdateStatusMessage("TECHNOVE/Airplane", GITHUB_BRANCH_NAME, parts[0]); // Tuinity
          final Component history = getHistory();
  
@@ -124,7 +124,7 @@ index 1d7c26354eee1dff5e66b6234d408ed8f800415c..7c3468b76f405d3a3878419da3d490ed
      @DontObfuscate
      public String getServerModName() {
 -        return "Paper"; // Paper - Paper > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
-+        return "Airplane"; // Airplane // Paper - Paper > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
++        return "MalinaServerV3"; // Airplane // Paper - Paper > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
      }
  
      public SystemReport fillSystemReport(SystemReport details) {
@@ -137,7 +137,7 @@ index c1fc309411c277f7b7450686543a6a7a7fe2fdb1..ac2d286b013a7606c00fa8409d446ee8
  
  public final class CraftServer implements Server {
 -    private final String serverName = "Paper"; // Paper
-+    private final String serverName = "Airplane"; // Paper // Airplane
++    private final String serverName = "MalinaServerV3"; // Paper // Airplane
      private final String serverVersion;
      private final String bukkitVersion = Versioning.getBukkitVersion();
      private final Logger logger = Logger.getLogger("Minecraft");
